@@ -158,7 +158,7 @@ def check(translate_this):
        if first =="a" or first == "e" or first =="i" or first == "o" or first == "u" or first == "y":
            new_word = word + pyg
            return new_word
-           print new_word
+           print "The translation is : new_word"
         
        else:
           s = word
@@ -167,7 +167,7 @@ def check(translate_this):
               new_word = s[1:]+s[0]+pyg
           else:
               new_word = s[2:]+s[0:2]+pyg
-          print new_word
+          print "The translation is : new_word"
           return new_word
    else:
        print "Hey! That's not a word!"
@@ -206,7 +206,7 @@ def question_1():
     ##This bit prints the result to the screen
     screen = pygame.display.set_mode( screen_size, pygame.FULLSCREEN )
     white = pygame.Color("white")
-    write_text( screen, "The translation is : " +check(input1), white, True )
+    write_text( screen, "The translation is : " +check(input1), white, True ) 
     pygame.display.flip()
     timed_wait( 2000, press_events )
 
@@ -257,5 +257,5 @@ start()
 ready_screen()
 
 question_1()
-    
+
 end()
